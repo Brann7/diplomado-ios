@@ -1,6 +1,6 @@
 # README
 
-Here goes my notes for the "Diplomado de Aplicaciones Móviles".
+Here goes my notes and exercises for the "Diplomado de Aplicaciones Móviles".
 
 ## First Module
 - MacOS
