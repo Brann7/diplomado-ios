@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55793A302AC78931003F98B6 /* ImageStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55793A2F2AC78931003F98B6 /* ImageStackViewController.swift */; };
 		55DDC3932ABE4B5A0010CD3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDC3922ABE4B5A0010CD3D /* AppDelegate.swift */; };
 		55DDC3952ABE4B5A0010CD3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDC3942ABE4B5A0010CD3D /* SceneDelegate.swift */; };
 		55DDC3972ABE4B5A0010CD3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDC3962ABE4B5A0010CD3D /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		55793A2F2AC78931003F98B6 /* ImageStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStackViewController.swift; sourceTree = "<group>"; };
 		55DDC38F2ABE4B5A0010CD3D /* MyFirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55DDC3922ABE4B5A0010CD3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55DDC3942ABE4B5A0010CD3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				55DDC39D2ABE4B5B0010CD3D /* LaunchScreen.storyboard */,
 				55DDC3A02ABE4B5B0010CD3D /* Info.plist */,
 				55DDC3C22ABE54220010CD3D /* MySecondlLunchScreen.storyboard */,
+				55793A2F2AC78931003F98B6 /* ImageStackViewController.swift */,
 			);
 			path = MyFirstApp;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55DDC3972ABE4B5A0010CD3D /* ViewController.swift in Sources */,
+				55793A302AC78931003F98B6 /* ImageStackViewController.swift in Sources */,
 				55DDC3932ABE4B5A0010CD3D /* AppDelegate.swift in Sources */,
 				55DDC3952ABE4B5A0010CD3D /* SceneDelegate.swift in Sources */,
 			);
