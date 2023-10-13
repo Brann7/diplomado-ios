@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var titleTypeSwitch: UISwitch!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var textFieldViewController: UITextField!
+    @IBOutlet weak var textFieldMultiple: UITextView!
+    @IBOutlet weak var buttonEnviar: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var titleTextField: UITextField!{
@@ -46,6 +48,13 @@ class ViewController: UIViewController {
         titleLabel.text = sender.text
     }
     
+    @IBAction func enviartexto(_ sender: UIButton) {
+        if textFieldMultiple.text.count <= 150 {
+            print(textFieldMultiple.text!)
+        }else {
+            print("Sobrepasaste el máximo")
+        }
+    }
     
     
     @IBAction func nextButtonTapped(_ sender: UIButton){

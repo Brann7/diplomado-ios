@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e9Z-YI-mQG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tb9-cy-kXn">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
@@ -196,25 +196,45 @@
         <!--View Controller-->
         <scene sceneID="3wa-hH-xA0">
             <objects>
-                <viewController id="Tb9-cy-kXn" sceneMemberID="viewController">
+                <viewController id="Tb9-cy-kXn" customClass="ViewController" customModule="MyFirstApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l43-Zt-oXe">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vwF-Wd-guA">
-                                <rect key="frame" x="16" y="113" width="361" height="34"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2I1-He-LCv">
+                                <rect key="frame" x="48" y="103" width="305" height="216"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1Y-mH-aFw">
+                                <rect key="frame" x="161" y="361" width="71" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Enviar">
+                                    <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="enviartexto:" destination="Tb9-cy-kXn" eventType="touchUpInside" id="SbL-oe-mhB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DWP-n4-2kB"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                         <constraints>
-                            <constraint firstItem="DWP-n4-2kB" firstAttribute="trailing" secondItem="vwF-Wd-guA" secondAttribute="trailing" constant="16" id="FJa-SD-deq"/>
-                            <constraint firstItem="vwF-Wd-guA" firstAttribute="leading" secondItem="DWP-n4-2kB" secondAttribute="leading" constant="16" id="c6G-gj-eWX"/>
-                            <constraint firstItem="vwF-Wd-guA" firstAttribute="top" secondItem="DWP-n4-2kB" secondAttribute="top" constant="54" id="k7F-I2-SEq"/>
+                            <constraint firstItem="DWP-n4-2kB" firstAttribute="trailing" secondItem="2I1-He-LCv" secondAttribute="trailing" constant="40" id="PEC-Cd-4ij"/>
+                            <constraint firstItem="DWP-n4-2kB" firstAttribute="trailing" secondItem="X1Y-mH-aFw" secondAttribute="trailing" constant="161" id="SOg-7h-NkN"/>
+                            <constraint firstItem="2I1-He-LCv" firstAttribute="leading" secondItem="DWP-n4-2kB" secondAttribute="leading" constant="48" id="d4p-wt-NLm"/>
+                            <constraint firstItem="DWP-n4-2kB" firstAttribute="bottom" secondItem="X1Y-mH-aFw" secondAttribute="bottom" constant="422" id="jPI-XU-ehx"/>
+                            <constraint firstItem="X1Y-mH-aFw" firstAttribute="leading" secondItem="DWP-n4-2kB" secondAttribute="leading" constant="161" id="lEn-h8-jPt"/>
+                            <constraint firstItem="X1Y-mH-aFw" firstAttribute="top" secondItem="2I1-He-LCv" secondAttribute="bottom" constant="42" id="tEj-iZ-WMB"/>
+                            <constraint firstItem="2I1-He-LCv" firstAttribute="top" secondItem="DWP-n4-2kB" secondAttribute="top" constant="44" id="zau-w1-3YQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonEnviar" destination="X1Y-mH-aFw" id="VRw-6B-evW"/>
+                        <outlet property="textFieldMultiple" destination="2I1-He-LCv" id="27K-B8-Wni"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Vn-Gj-po5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -278,6 +298,9 @@
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tableCellBlueTextColor">
             <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
