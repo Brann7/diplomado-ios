@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		55793A302AC78931003F98B6 /* ImageStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55793A2F2AC78931003F98B6 /* ImageStackViewController.swift */; };
+		55B10CFA2ADA0017000D1530 /* CaptionedImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55B10CF92ADA0017000D1530 /* CaptionedImage.xib */; };
+		55B10CFD2ADA1DDC000D1530 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55B10CFC2ADA1DDC000D1530 /* MainViewController.xib */; };
+		55C957AC2AD9FE6B00FEBF96 /* CaptionedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C957AB2AD9FE6B00FEBF96 /* CaptionedImage.swift */; };
 		55DDC3932ABE4B5A0010CD3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDC3922ABE4B5A0010CD3D /* AppDelegate.swift */; };
 		55DDC3952ABE4B5A0010CD3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDC3942ABE4B5A0010CD3D /* SceneDelegate.swift */; };
-		55DDC3972ABE4B5A0010CD3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDC3962ABE4B5A0010CD3D /* ViewController.swift */; };
+		55DDC3972ABE4B5A0010CD3D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDC3962ABE4B5A0010CD3D /* MainViewController.swift */; };
 		55DDC39A2ABE4B5A0010CD3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55DDC3982ABE4B5A0010CD3D /* Main.storyboard */; };
 		55DDC39C2ABE4B5B0010CD3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55DDC39B2ABE4B5B0010CD3D /* Assets.xcassets */; };
 		55DDC39F2ABE4B5B0010CD3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55DDC39D2ABE4B5B0010CD3D /* LaunchScreen.storyboard */; };
@@ -39,10 +42,13 @@
 
 /* Begin PBXFileReference section */
 		55793A2F2AC78931003F98B6 /* ImageStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStackViewController.swift; sourceTree = "<group>"; };
+		55B10CF92ADA0017000D1530 /* CaptionedImage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaptionedImage.xib; sourceTree = "<group>"; };
+		55B10CFC2ADA1DDC000D1530 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		55C957AB2AD9FE6B00FEBF96 /* CaptionedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionedImage.swift; sourceTree = "<group>"; };
 		55DDC38F2ABE4B5A0010CD3D /* MyFirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55DDC3922ABE4B5A0010CD3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55DDC3942ABE4B5A0010CD3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		55DDC3962ABE4B5A0010CD3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		55DDC3962ABE4B5A0010CD3D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		55DDC3992ABE4B5A0010CD3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55DDC39B2ABE4B5B0010CD3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55DDC39E2ABE4B5B0010CD3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,6 +86,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55B10CFB2ADA1D9B000D1530 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				55B10CFC2ADA1DDC000D1530 /* MainViewController.xib */,
+				55DDC3962ABE4B5A0010CD3D /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		55C957AD2AD9FE8C00FEBF96 /* CaptionedImage */ = {
+			isa = PBXGroup;
+			children = (
+				55B10CF92ADA0017000D1530 /* CaptionedImage.xib */,
+				55C957AB2AD9FE6B00FEBF96 /* CaptionedImage.swift */,
+			);
+			path = CaptionedImage;
+			sourceTree = "<group>";
+		};
 		55DDC3862ABE4B5A0010CD3D = {
 			isa = PBXGroup;
 			children = (
@@ -103,15 +127,16 @@
 		55DDC3912ABE4B5A0010CD3D /* MyFirstApp */ = {
 			isa = PBXGroup;
 			children = (
+				55B10CFB2ADA1D9B000D1530 /* Main */,
 				55DDC3922ABE4B5A0010CD3D /* AppDelegate.swift */,
 				55DDC3942ABE4B5A0010CD3D /* SceneDelegate.swift */,
-				55DDC3962ABE4B5A0010CD3D /* ViewController.swift */,
 				55DDC3982ABE4B5A0010CD3D /* Main.storyboard */,
 				55DDC39B2ABE4B5B0010CD3D /* Assets.xcassets */,
 				55DDC39D2ABE4B5B0010CD3D /* LaunchScreen.storyboard */,
 				55DDC3A02ABE4B5B0010CD3D /* Info.plist */,
 				55DDC3C22ABE54220010CD3D /* MySecondlLunchScreen.storyboard */,
 				55793A2F2AC78931003F98B6 /* ImageStackViewController.swift */,
+				55C957AD2AD9FE8C00FEBF96 /* CaptionedImage */,
 			);
 			path = MyFirstApp;
 			sourceTree = "<group>";
@@ -238,7 +263,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				55DDC39F2ABE4B5B0010CD3D /* LaunchScreen.storyboard in Resources */,
+				55B10CFD2ADA1DDC000D1530 /* MainViewController.xib in Resources */,
 				55DDC39C2ABE4B5B0010CD3D /* Assets.xcassets in Resources */,
+				55B10CFA2ADA0017000D1530 /* CaptionedImage.xib in Resources */,
 				55DDC3C32ABE54220010CD3D /* MySecondlLunchScreen.storyboard in Resources */,
 				55DDC39A2ABE4B5A0010CD3D /* Main.storyboard in Resources */,
 			);
@@ -265,8 +292,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55DDC3972ABE4B5A0010CD3D /* ViewController.swift in Sources */,
+				55DDC3972ABE4B5A0010CD3D /* MainViewController.swift in Sources */,
 				55793A302AC78931003F98B6 /* ImageStackViewController.swift in Sources */,
+				55C957AC2AD9FE6B00FEBF96 /* CaptionedImage.swift in Sources */,
 				55DDC3932ABE4B5A0010CD3D /* AppDelegate.swift in Sources */,
 				55DDC3952ABE4B5A0010CD3D /* SceneDelegate.swift in Sources */,
 			);

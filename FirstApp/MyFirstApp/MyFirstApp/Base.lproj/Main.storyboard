@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tb9-cy-kXn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e9Z-YI-mQG">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="214"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MY APP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCS-vJ-xRV" userLabel="Label1">
-                                        <rect key="frame" x="25" y="129" width="343" height="60"/>
+                                        <rect key="frame" x="25" y="85" width="343" height="104"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                         <nil key="highlightedColor"/>
@@ -136,34 +136,35 @@
                         <outlet property="titleLabel" destination="LNb-rs-8ZL" id="PYr-8C-SsB"/>
                         <outlet property="titleTextField" destination="wIe-aC-yfc" id="WHC-kK-L8h"/>
                         <outlet property="titleTypeSwitch" destination="fuj-Ay-byY" id="7UL-Hl-LMO"/>
-                        <segue destination="G0f-Uc-5J5" kind="show" identifier="SegueFromMainToPhotos" id="JRe-XS-Ytj"/>
-                        <segue destination="RvG-cR-jPE" kind="show" identifier="OpenInfo" id="a7i-2E-mBn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="973.28244274809151" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="866" y="584"/>
         </scene>
         <!--Image Stack View Controller-->
         <scene sceneID="y6j-AO-KoR">
             <objects>
-                <viewController id="G0f-Uc-5J5" customClass="ImageStackViewController" customModule="MyFirstApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImagestackViewController" id="G0f-Uc-5J5" customClass="ImageStackViewController" customModule="MyFirstApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XAw-fV-Vmd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ze1-vZ-ylt">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images-2" translatesAutoresizingMaskIntoConstraints="NO" id="P9L-Kt-Ff7">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="231.66666666666666"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images-3" translatesAutoresizingMaskIntoConstraints="NO" id="yQQ-5Y-CZR">
-                                        <rect key="frame" x="0.0" y="241.66666666666669" width="393" height="231.66666666666669"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images-4" translatesAutoresizingMaskIntoConstraints="NO" id="eaR-kM-8ia">
-                                        <rect key="frame" x="0.0" y="483.33333333333343" width="393" height="231.66666666666669"/>
-                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fah-Sy-nhw" customClass="CaptionedImage" customModule="MyFirstApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="246.33333333333334"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eIY-i9-vAF" customClass="CaptionedImage" customModule="MyFirstApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="256.33333333333331" width="393" height="246.33333333333331"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pGY-h3-PcK" customClass="CaptionedImage" customModule="MyFirstApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="512.66666666666663" width="393" height="246.33333333333337"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -184,9 +185,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="firstImageView" destination="P9L-Kt-Ff7" id="CGd-pt-GTV"/>
-                        <outlet property="secondImageView" destination="yQQ-5Y-CZR" id="bsU-kt-2z5"/>
-                        <outlet property="thirdImageView" destination="eaR-kM-8ia" id="nAX-mB-SNs"/>
+                        <outlet property="firstCaptionedImage" destination="fah-Sy-nhw" id="D6Z-kt-p3U"/>
+                        <outlet property="secondCaptionedImage" destination="eIY-i9-vAF" id="Rff-bV-dIS"/>
+                        <outlet property="thirdCaptionedImage" destination="pGY-h3-PcK" id="08E-sK-uR6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XR8-Wf-tdK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -245,7 +246,7 @@
             <objects>
                 <viewController id="RvG-cR-jPE" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CGa-uM-GMF">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="FJk-6U-FeJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -266,22 +267,13 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="enx-cd-yqm"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zk4-Dg-Ug9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="46.564885496183201" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="331" y="-73"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="aZn-WC-M7T"/>
-    </inferredMetricsTieBreakers>
     <resources>
-        <image name="images-2" width="287" height="175"/>
-        <image name="images-3" width="275" height="183"/>
-        <image name="images-4" width="360" height="140"/>
         <image name="paperplane.fill" catalog="system" width="128" height="119"/>
         <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
         <systemColor name="labelColor">

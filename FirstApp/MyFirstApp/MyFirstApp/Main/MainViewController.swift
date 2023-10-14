@@ -23,16 +23,16 @@ class MainViewController: UIViewController {
             titleTextField.delegate = self
         }
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //Es el que nos manda a otro viewcontroller
-        guard let destinationViewController = segue.destination as? ImageStackViewController else { return }
-        destinationViewController.showCat = photoTypeSwitch.isOn
-        if titleTypeSwitch.isOn {
-            destinationViewController.title = titleTextField.text
-        }
-        
-        
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        //Es el que nos manda a otro viewcontroller
+//        guard let destinationViewController = segue.destination as? ImageStackViewController else { return }
+//        destinationViewController.showCat = photoTypeSwitch.isOn
+//        if titleTypeSwitch.isOn {
+//            destinationViewController.title = titleTextField.text
+//        }
+//        
+//        
+//    }
     
     
     @IBAction func photoTypeSwitchValueChanged(_ sender: UISwitch) {
@@ -59,15 +59,27 @@ class MainViewController: UIViewController {
     
     @IBAction func nextButtonTapped(_ sender: UIButton){
         if sender.tag == 1{
-            performSegue(withIdentifier: "SegueFromMainToPhotos", sender: nil)
+            //performSegue(withIdentifier: "SegueFromMainToPhotos", sender: nil)
+            seguePhotos()
         }else{
-            performSegue(withIdentifier: "OpenInfo", sender: nil)
+            
         }
         
         //print(photoTypeSwitch.isOn)
     }
     
+    func segueTo(){
+        
+    }
     
+    func seguePhotos(){
+        guard let photosViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ImagestackViewController") as? ImageStackViewController else {return}
+        photosViewController.showCat = photoTypeSwitch.isOn
+        if titleTypeSwitch.isOn{
+            photosViewController.title = titleTextField.text
+        }
+        navigationController?.pushViewController(photosViewController, animated: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
