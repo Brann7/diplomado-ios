@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "4E7243DF-B7B7-40B5-8666-91C8851B5278"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7CF17292-E442-4AA8-AA65-6707845439D6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tablas/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "addButton(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7CF17292-E442-4AA8-AA65-6707845439D6 - cecf20d2f6c3f97"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tablas.ViewController.addButton(__C.UIButton) -&gt; ()"
+                  moduleName = "Tablas"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diplomado/Downloads/Tablas/Tablas/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "7CF17292-E442-4AA8-AA65-6707845439D6 - cecf20d2f6c3f97"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tablas.ViewController.addButton(__C.UIButton) -&gt; ()"
+                  moduleName = "Tablas"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diplomado/Downloads/Tablas/Tablas/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
