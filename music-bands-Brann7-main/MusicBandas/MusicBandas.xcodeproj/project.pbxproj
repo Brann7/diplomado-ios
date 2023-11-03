@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		552427042AF012F600C44181 /* screenAlbums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552427032AF012F600C44181 /* screenAlbums.swift */; };
+		552427072AF0149C00C44181 /* MyAlbumsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552427052AF0149C00C44181 /* MyAlbumsTableViewCell.swift */; };
+		552427082AF0149C00C44181 /* MyAlbumsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 552427062AF0149C00C44181 /* MyAlbumsTableViewCell.xib */; };
+		55BF5DCD2AED9D7C009B62DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BF5DCC2AED9D7C009B62DF /* AppDelegate.swift */; };
+		55BF5DCF2AED9D7C009B62DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BF5DCE2AED9D7C009B62DF /* SceneDelegate.swift */; };
+		55BF5DD12AED9D7C009B62DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BF5DD02AED9D7C009B62DF /* ViewController.swift */; };
+		55BF5DD42AED9D7C009B62DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55BF5DD22AED9D7C009B62DF /* Main.storyboard */; };
+		55BF5DD62AED9D7E009B62DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55BF5DD52AED9D7E009B62DF /* Assets.xcassets */; };
+		55BF5DD92AED9D7E009B62DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55BF5DD72AED9D7E009B62DF /* LaunchScreen.storyboard */; };
+		55BF5DE42AED9D7E009B62DF /* MusicBandasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BF5DE32AED9D7E009B62DF /* MusicBandasTests.swift */; };
+		55BF5DEE2AED9D7E009B62DF /* MusicBandasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BF5DED2AED9D7E009B62DF /* MusicBandasUITests.swift */; };
+		55BF5DF02AED9D7E009B62DF /* MusicBandasUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BF5DEF2AED9D7E009B62DF /* MusicBandasUITestsLaunchTests.swift */; };
+		55DBE8F32AF004C100C32948 /* MyBandsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DBE8F12AF004C100C32948 /* MyBandsTableViewCell.swift */; };
+		55DBE8F42AF004C100C32948 /* MyBandsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55DBE8F22AF004C100C32948 /* MyBandsTableViewCell.xib */; };
+		5B47BC482AF581A6009134C9 /* screenSongs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B47BC472AF581A6009134C9 /* screenSongs.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55BF5DE02AED9D7E009B62DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55BF5DC12AED9D7C009B62DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55BF5DC82AED9D7C009B62DF;
+			remoteInfo = MusicBandas;
+		};
+		55BF5DEA2AED9D7E009B62DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55BF5DC12AED9D7C009B62DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55BF5DC82AED9D7C009B62DF;
+			remoteInfo = MusicBandas;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		552427032AF012F600C44181 /* screenAlbums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = screenAlbums.swift; sourceTree = "<group>"; };
+		552427052AF0149C00C44181 /* MyAlbumsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAlbumsTableViewCell.swift; sourceTree = "<group>"; };
+		552427062AF0149C00C44181 /* MyAlbumsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyAlbumsTableViewCell.xib; sourceTree = "<group>"; };
+		55BF5DC92AED9D7C009B62DF /* MusicBandas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicBandas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55BF5DCC2AED9D7C009B62DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		55BF5DCE2AED9D7C009B62DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		55BF5DD02AED9D7C009B62DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		55BF5DD32AED9D7C009B62DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		55BF5DD52AED9D7E009B62DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55BF5DD82AED9D7E009B62DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		55BF5DDA2AED9D7E009B62DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55BF5DDF2AED9D7E009B62DF /* MusicBandasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicBandasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55BF5DE32AED9D7E009B62DF /* MusicBandasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicBandasTests.swift; sourceTree = "<group>"; };
+		55BF5DE92AED9D7E009B62DF /* MusicBandasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicBandasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55BF5DED2AED9D7E009B62DF /* MusicBandasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicBandasUITests.swift; sourceTree = "<group>"; };
+		55BF5DEF2AED9D7E009B62DF /* MusicBandasUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicBandasUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		55DBE8F12AF004C100C32948 /* MyBandsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBandsTableViewCell.swift; sourceTree = "<group>"; };
+		55DBE8F22AF004C100C32948 /* MyBandsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyBandsTableViewCell.xib; sourceTree = "<group>"; };
+		5B47BC472AF581A6009134C9 /* screenSongs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = screenSongs.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55BF5DC62AED9D7C009B62DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55BF5DDC2AED9D7E009B62DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55BF5DE62AED9D7E009B62DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55BF5DC02AED9D7C009B62DF = {
+			isa = PBXGroup;
+			children = (
+				55BF5DCB2AED9D7C009B62DF /* MusicBandas */,
+				55BF5DE22AED9D7E009B62DF /* MusicBandasTests */,
+				55BF5DEC2AED9D7E009B62DF /* MusicBandasUITests */,
+				55BF5DCA2AED9D7C009B62DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		55BF5DCA2AED9D7C009B62DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55BF5DC92AED9D7C009B62DF /* MusicBandas.app */,
+				55BF5DDF2AED9D7E009B62DF /* MusicBandasTests.xctest */,
+				55BF5DE92AED9D7E009B62DF /* MusicBandasUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55BF5DCB2AED9D7C009B62DF /* MusicBandas */ = {
+			isa = PBXGroup;
+			children = (
+				55BF5DCC2AED9D7C009B62DF /* AppDelegate.swift */,
+				55BF5DCE2AED9D7C009B62DF /* SceneDelegate.swift */,
+				55BF5DD02AED9D7C009B62DF /* ViewController.swift */,
+				5B47BC472AF581A6009134C9 /* screenSongs.swift */,
+				552427032AF012F600C44181 /* screenAlbums.swift */,
+				55DBE8F12AF004C100C32948 /* MyBandsTableViewCell.swift */,
+				552427052AF0149C00C44181 /* MyAlbumsTableViewCell.swift */,
+				552427062AF0149C00C44181 /* MyAlbumsTableViewCell.xib */,
+				55DBE8F22AF004C100C32948 /* MyBandsTableViewCell.xib */,
+				55BF5DD22AED9D7C009B62DF /* Main.storyboard */,
+				55BF5DD52AED9D7E009B62DF /* Assets.xcassets */,
+				55BF5DD72AED9D7E009B62DF /* LaunchScreen.storyboard */,
+				55BF5DDA2AED9D7E009B62DF /* Info.plist */,
+			);
+			path = MusicBandas;
+			sourceTree = "<group>";
+		};
+		55BF5DE22AED9D7E009B62DF /* MusicBandasTests */ = {
+			isa = PBXGroup;
+			children = (
+				55BF5DE32AED9D7E009B62DF /* MusicBandasTests.swift */,
+			);
+			path = MusicBandasTests;
+			sourceTree = "<group>";
+		};
+		55BF5DEC2AED9D7E009B62DF /* MusicBandasUITests */ = {
+			isa = PBXGroup;
+			children = (
+				55BF5DED2AED9D7E009B62DF /* MusicBandasUITests.swift */,
+				55BF5DEF2AED9D7E009B62DF /* MusicBandasUITestsLaunchTests.swift */,
+			);
+			path = MusicBandasUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55BF5DC82AED9D7C009B62DF /* MusicBandas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55BF5DF32AED9D7E009B62DF /* Build configuration list for PBXNativeTarget "MusicBandas" */;
+			buildPhases = (
+				55BF5DC52AED9D7C009B62DF /* Sources */,
+				55BF5DC62AED9D7C009B62DF /* Frameworks */,
+				55BF5DC72AED9D7C009B62DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MusicBandas;
+			productName = MusicBandas;
+			productReference = 55BF5DC92AED9D7C009B62DF /* MusicBandas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		55BF5DDE2AED9D7E009B62DF /* MusicBandasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55BF5DF62AED9D7E009B62DF /* Build configuration list for PBXNativeTarget "MusicBandasTests" */;
+			buildPhases = (
+				55BF5DDB2AED9D7E009B62DF /* Sources */,
+				55BF5DDC2AED9D7E009B62DF /* Frameworks */,
+				55BF5DDD2AED9D7E009B62DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55BF5DE12AED9D7E009B62DF /* PBXTargetDependency */,
+			);
+			name = MusicBandasTests;
+			productName = MusicBandasTests;
+			productReference = 55BF5DDF2AED9D7E009B62DF /* MusicBandasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		55BF5DE82AED9D7E009B62DF /* MusicBandasUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55BF5DF92AED9D7E009B62DF /* Build configuration list for PBXNativeTarget "MusicBandasUITests" */;
+			buildPhases = (
+				55BF5DE52AED9D7E009B62DF /* Sources */,
+				55BF5DE62AED9D7E009B62DF /* Frameworks */,
+				55BF5DE72AED9D7E009B62DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55BF5DEB2AED9D7E009B62DF /* PBXTargetDependency */,
+			);
+			name = MusicBandasUITests;
+			productName = MusicBandasUITests;
+			productReference = 55BF5DE92AED9D7E009B62DF /* MusicBandasUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55BF5DC12AED9D7C009B62DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					55BF5DC82AED9D7C009B62DF = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					55BF5DDE2AED9D7E009B62DF = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 55BF5DC82AED9D7C009B62DF;
+					};
+					55BF5DE82AED9D7E009B62DF = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 55BF5DC82AED9D7C009B62DF;
+					};
+				};
+			};
+			buildConfigurationList = 55BF5DC42AED9D7C009B62DF /* Build configuration list for PBXProject "MusicBandas" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55BF5DC02AED9D7C009B62DF;
+			productRefGroup = 55BF5DCA2AED9D7C009B62DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55BF5DC82AED9D7C009B62DF /* MusicBandas */,
+				55BF5DDE2AED9D7E009B62DF /* MusicBandasTests */,
+				55BF5DE82AED9D7E009B62DF /* MusicBandasUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55BF5DC72AED9D7C009B62DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				552427082AF0149C00C44181 /* MyAlbumsTableViewCell.xib in Resources */,
+				55BF5DD92AED9D7E009B62DF /* LaunchScreen.storyboard in Resources */,
+				55BF5DD62AED9D7E009B62DF /* Assets.xcassets in Resources */,
+				55DBE8F42AF004C100C32948 /* MyBandsTableViewCell.xib in Resources */,
+				55BF5DD42AED9D7C009B62DF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55BF5DDD2AED9D7E009B62DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55BF5DE72AED9D7E009B62DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55BF5DC52AED9D7C009B62DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B47BC482AF581A6009134C9 /* screenSongs.swift in Sources */,
+				55DBE8F32AF004C100C32948 /* MyBandsTableViewCell.swift in Sources */,
+				552427072AF0149C00C44181 /* MyAlbumsTableViewCell.swift in Sources */,
+				552427042AF012F600C44181 /* screenAlbums.swift in Sources */,
+				55BF5DD12AED9D7C009B62DF /* ViewController.swift in Sources */,
+				55BF5DCD2AED9D7C009B62DF /* AppDelegate.swift in Sources */,
+				55BF5DCF2AED9D7C009B62DF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55BF5DDB2AED9D7E009B62DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55BF5DE42AED9D7E009B62DF /* MusicBandasTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55BF5DE52AED9D7E009B62DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55BF5DEE2AED9D7E009B62DF /* MusicBandasUITests.swift in Sources */,
+				55BF5DF02AED9D7E009B62DF /* MusicBandasUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55BF5DE12AED9D7E009B62DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55BF5DC82AED9D7C009B62DF /* MusicBandas */;
+			targetProxy = 55BF5DE02AED9D7E009B62DF /* PBXContainerItemProxy */;
+		};
+		55BF5DEB2AED9D7E009B62DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55BF5DC82AED9D7C009B62DF /* MusicBandas */;
+			targetProxy = 55BF5DEA2AED9D7E009B62DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		55BF5DD22AED9D7C009B62DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55BF5DD32AED9D7C009B62DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		55BF5DD72AED9D7E009B62DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55BF5DD82AED9D7E009B62DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		55BF5DF12AED9D7E009B62DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		55BF5DF22AED9D7E009B62DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55BF5DF42AED9D7E009B62DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MusicBandas/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = myOrg.MusicBandas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		55BF5DF52AED9D7E009B62DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MusicBandas/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = myOrg.MusicBandas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		55BF5DF72AED9D7E009B62DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = myOrg.MusicBandasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MusicBandas.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MusicBandas";
+			};
+			name = Debug;
+		};
+		55BF5DF82AED9D7E009B62DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = myOrg.MusicBandasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MusicBandas.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MusicBandas";
+			};
+			name = Release;
+		};
+		55BF5DFA2AED9D7E009B62DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = myOrg.MusicBandasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MusicBandas;
+			};
+			name = Debug;
+		};
+		55BF5DFB2AED9D7E009B62DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = myOrg.MusicBandasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MusicBandas;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55BF5DC42AED9D7C009B62DF /* Build configuration list for PBXProject "MusicBandas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55BF5DF12AED9D7E009B62DF /* Debug */,
+				55BF5DF22AED9D7E009B62DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55BF5DF32AED9D7E009B62DF /* Build configuration list for PBXNativeTarget "MusicBandas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55BF5DF42AED9D7E009B62DF /* Debug */,
+				55BF5DF52AED9D7E009B62DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55BF5DF62AED9D7E009B62DF /* Build configuration list for PBXNativeTarget "MusicBandasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55BF5DF72AED9D7E009B62DF /* Debug */,
+				55BF5DF82AED9D7E009B62DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55BF5DF92AED9D7E009B62DF /* Build configuration list for PBXNativeTarget "MusicBandasUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55BF5DFA2AED9D7E009B62DF /* Debug */,
+				55BF5DFB2AED9D7E009B62DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55BF5DC12AED9D7C009B62DF /* Project object */;
+}

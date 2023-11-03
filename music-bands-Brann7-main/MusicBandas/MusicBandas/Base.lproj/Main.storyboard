@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1HO-No-lEx">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bands-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MusicBandas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hB4-iL-1Ml">
+                                <rect key="frame" x="16" y="127" width="361" height="645"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hB4-iL-1Ml" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="2Z6-1s-WA1"/>
+                            <constraint firstItem="hB4-iL-1Ml" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5ud-8P-Vid"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hB4-iL-1Ml" secondAttribute="bottom" constant="46" id="qBC-8O-aqt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hB4-iL-1Ml" secondAttribute="trailing" constant="16" id="s8O-UK-7Kw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bands" id="sb1-I7-Iy8"/>
+                    <connections>
+                        <outlet property="tabla" destination="hB4-iL-1Ml" id="gSY-a7-Sdv"/>
+                        <segue destination="eLv-ax-FHd" kind="show" identifier="screenAlbums" id="VDt-cG-zQK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1066.4122137404579" y="3.5211267605633805"/>
+        </scene>
+        <!--Albums-->
+        <scene sceneID="vJo-fb-Fi2">
+            <objects>
+                <viewController id="eLv-ax-FHd" customClass="screenAlbums" customModule="MusicBandas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NUQ-Jg-CN5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aXm-Ca-3xt">
+                                <rect key="frame" x="16" y="122" width="361" height="646"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lun-Kj-Xku"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aXm-Ca-3xt" firstAttribute="leading" secondItem="lun-Kj-Xku" secondAttribute="leading" constant="16" id="L34-ar-XmT"/>
+                            <constraint firstItem="lun-Kj-Xku" firstAttribute="trailing" secondItem="aXm-Ca-3xt" secondAttribute="trailing" constant="16" id="MoR-bh-Zci"/>
+                            <constraint firstItem="aXm-Ca-3xt" firstAttribute="top" secondItem="lun-Kj-Xku" secondAttribute="top" constant="19" id="Xkf-0j-LWb"/>
+                            <constraint firstItem="lun-Kj-Xku" firstAttribute="bottom" secondItem="aXm-Ca-3xt" secondAttribute="bottom" constant="50" id="jMf-dn-YL5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Albums" id="UGw-yR-MZK"/>
+                    <connections>
+                        <outlet property="tableViewAlbums" destination="aXm-Ca-3xt" id="Hot-k9-gYT"/>
+                        <segue destination="avl-bo-lhC" kind="show" identifier="screenSongs" id="MdV-A0-Mna"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RiD-kG-VgZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1916.7938931297708" y="3.5211267605633805"/>
+        </scene>
+        <!--Songs-->
+        <scene sceneID="B9Y-qx-nua">
+            <objects>
+                <viewController id="avl-bo-lhC" customClass="screenSongs" customModule="MusicBandas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dbp-5B-XZ5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="L6I-5i-moh">
+                                <rect key="frame" x="16" y="122" width="361" height="643"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sd2-AC-baL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sd2-AC-baL" firstAttribute="trailing" secondItem="L6I-5i-moh" secondAttribute="trailing" constant="16" id="eLN-bj-IKg"/>
+                            <constraint firstItem="sd2-AC-baL" firstAttribute="bottom" secondItem="L6I-5i-moh" secondAttribute="bottom" constant="53" id="gKf-8w-gIH"/>
+                            <constraint firstItem="L6I-5i-moh" firstAttribute="leading" secondItem="sd2-AC-baL" secondAttribute="leading" constant="16" id="m1C-nG-fNQ"/>
+                            <constraint firstItem="L6I-5i-moh" firstAttribute="top" secondItem="sd2-AC-baL" secondAttribute="top" constant="19" id="pyz-rD-lYD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Songs" id="hM9-5w-8Bz"/>
+                    <connections>
+                        <outlet property="tableSongs" destination="L6I-5i-moh" id="gMh-0U-hMz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rWL-4V-Ee1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2675.5725190839694" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Lv3-Kq-fOU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1HO-No-lEx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PLI-QI-byJ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="JFw-6c-yqc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HTS-HQ-HLO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
